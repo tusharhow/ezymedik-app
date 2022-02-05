@@ -30,14 +30,20 @@ class AppoinmentConfirmation extends StatelessWidget {
             ),
             Center(
               child: Container(
-                height: _size.height * 0.7,
+                height: _size.height * 0.8,
                 width: _size.width / 1.2,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   border: Border.all(
                     color: Colors.blue,
                     width: 1,
-                  ),
+                  ),boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: Offset(0, 2),
+                        blurRadius: 10,
+                      ),
+                    ]
                 ),
                 child: Padding(
                   padding: const EdgeInsets.only(top: 20),

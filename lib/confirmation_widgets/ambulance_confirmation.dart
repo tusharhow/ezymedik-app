@@ -30,7 +30,7 @@ class AmbulanceConfirmation extends StatelessWidget {
             ),
             Center(
               child: Container(
-                height: _size.height * 0.6,
+                height: _size.height * 0.7,
                 width: _size.width / 1.2,
                 decoration: BoxDecoration(
                     color: Colors.white,
