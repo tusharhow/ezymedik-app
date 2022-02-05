@@ -1,6 +1,7 @@
 import 'package:ezymedik_app/components/navigate.dart';
 import 'package:ezymedik_app/components/reusble_button.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../constants.dart';
 import 'ambulance_confirmation.dart';
@@ -33,7 +34,7 @@ class AmbulanceRequest extends StatelessWidget {
               Container(
                 alignment: Alignment.centerLeft,
                 child: Text('Emergency Ambulance\nRequest',
-                    style: TextStyle(
+                    style: GoogleFonts.poppins(
                         fontSize: _size.height * 0.0340,
                         fontWeight: FontWeight.bold,
                         color: defaultColor)),
@@ -42,7 +43,7 @@ class AmbulanceRequest extends StatelessWidget {
               Container(
                 alignment: Alignment.centerLeft,
                 child: Text('Enter your location',
-                    style: TextStyle(
+                    style: GoogleFonts.poppins(
                       fontSize: _size.height * 0.0340,
                     )),
               ),
@@ -50,7 +51,7 @@ class AmbulanceRequest extends StatelessWidget {
               TextFormField(
                 decoration: InputDecoration(
                   hintText: 'Enter your location',
-                  hintStyle: TextStyle(
+                  hintStyle: GoogleFonts.poppins(
                     fontSize: _size.height * 0.0220,
                   ),
                   border: OutlineInputBorder(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ReusablePrimaryButton extends StatelessWidget {
   ReusablePrimaryButton(
@@ -22,7 +23,7 @@ class ReusablePrimaryButton extends StatelessWidget {
         color: buttonColor,
         child: Text(
           childText,
-          style: TextStyle(
+          style: GoogleFonts.poppins(
               fontWeight: FontWeight.w500, fontSize: 16.0, color: textColor),
         ),
         onPressed: onPressed as void Function(),

@@ -2,6 +2,7 @@ import 'package:ezymedik_app/components/navigate.dart';
 import 'package:ezymedik_app/components/reusble_button.dart';
 import 'package:ezymedik_app/screens/appoinment_confirmation.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../constants.dart';
 
@@ -34,7 +35,7 @@ class MyAppoinment extends StatelessWidget {
             Container(
               alignment: Alignment.center,
               child: Text('My Appointments',
-                  style: TextStyle(
+                  style: GoogleFonts.poppins(
                       fontSize: _size.height * 0.0340,
                       fontWeight: FontWeight.bold,
                       color: defaultColor)),
@@ -66,7 +67,7 @@ class MyAppoinment extends StatelessWidget {
                           children: [
                             Text(
                               'Tue, 12, 2021',
-                              style: TextStyle(
+                              style: GoogleFonts.poppins(
                                   fontSize: _size.height * 0.02,
                                   fontWeight: FontWeight.bold,
                                   color: defaultColor),
@@ -76,7 +77,7 @@ class MyAppoinment extends StatelessWidget {
                             ),
                             Text(
                               '2:00 pm',
-                              style: TextStyle(
+                              style: GoogleFonts.poppins(
                                   fontSize: _size.height * 0.02,
                                   fontWeight: FontWeight.bold,
                                   color: defaultColor),
@@ -88,7 +89,7 @@ class MyAppoinment extends StatelessWidget {
                               children: [
                                 Text(
                                   'Start Consultation',
-                                  style: TextStyle(
+                                  style: GoogleFonts.poppins(
                                     fontSize: _size.height * 0.02,
                                   ),
                                 ),

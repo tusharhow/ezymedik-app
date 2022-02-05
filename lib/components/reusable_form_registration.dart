@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ReusableTextFormFieldRegistration extends StatelessWidget {
   const ReusableTextFormFieldRegistration({
@@ -23,19 +24,19 @@ class ReusableTextFormFieldRegistration extends StatelessWidget {
         obscureText: obscureText,
         decoration: InputDecoration(
           labelText: label,
-          labelStyle: TextStyle(
+          labelStyle: GoogleFonts.poppins(
             color: Colors.black,
             fontSize: 15,
           ),
           hintText: hint,
-          hintStyle: TextStyle(color: Colors.black54),
+          hintStyle: GoogleFonts.poppins(color: Colors.black54),
           enabledBorder: UnderlineInputBorder(
             borderSide: BorderSide(
               color: Colors.black,
             ),
           ),
         ),
-        style: TextStyle(color: Colors.black54),
+        style: GoogleFonts.poppins(color: Colors.black54),
       ),
     );
   }

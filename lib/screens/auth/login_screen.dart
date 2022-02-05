@@ -7,6 +7,8 @@ import 'package:ezymedik_app/screens/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../nav_bar.dart';
+
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -67,7 +69,7 @@ class LoginScreen extends StatelessWidget {
                 buttonColor: Color(0xff18A0FB),
                 textColor: Colors.white,
                 onPressed: () {
-                  push(context: context, widget: HomePage());
+                  push(context: context, widget: BottomNavigationScreen());
                 }),
           ],
         ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../constants.dart';
 
@@ -54,7 +55,7 @@ class MedicationConfirmation extends StatelessWidget {
                       Container(
                         alignment: Alignment.center,
                         child: Text('Confirmation',
-                            style: TextStyle(
+                            style: GoogleFonts.poppins(
                                 fontSize: _size.height * 0.0340,
                                 fontWeight: FontWeight.bold,
                                 color: defaultColor)),
@@ -66,7 +67,7 @@ class MedicationConfirmation extends StatelessWidget {
                         alignment: Alignment.center,
                         child: Text(
                           'Your drugs will be\ndelivered to your\nregistered address\nwithin 24 hours',
-                          style: TextStyle(
+                          style: GoogleFonts.poppins(
                             fontSize: _size.height * 0.0220,
                           ),
                           textAlign: TextAlign.center,
@@ -79,7 +80,7 @@ class MedicationConfirmation extends StatelessWidget {
                         alignment: Alignment.center,
                         child: Text(
                           'Change address (cost N500)',
-                          style: TextStyle(
+                          style: GoogleFonts.poppins(
                             fontSize: _size.height * 0.0230,
                             color: Colors.black54,
                           ),

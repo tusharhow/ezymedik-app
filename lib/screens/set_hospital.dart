@@ -1,5 +1,6 @@
 import 'package:ezymedik_app/components/navigate.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../constants.dart';
 import 'nhis_number.dart';
@@ -24,7 +25,7 @@ class SetHospital extends StatelessWidget {
               Container(
                 alignment: Alignment.centerLeft,
                 child: Text('Are you an NHIS enrollee?',
-                    style: TextStyle(
+                    style: GoogleFonts.poppins(
                         fontSize: _size.height * 0.0340,
                         fontWeight: FontWeight.bold,
                         color: defaultColor)),
@@ -52,7 +53,7 @@ class SetHospital extends StatelessWidget {
                           Container(
                             alignment: Alignment.centerLeft,
                             child: Text('Yes, please.',
-                                style: TextStyle(
+                                style: GoogleFonts.poppins(
                                     fontSize: _size.height * 0.0300,
                                     color: Colors.black)),
                           ),
@@ -83,7 +84,7 @@ class SetHospital extends StatelessWidget {
                         Container(
                           alignment: Alignment.centerLeft,
                           child: Text('No, thanks.',
-                              style: TextStyle(
+                              style: GoogleFonts.poppins(
                                   fontSize: _size.height * 0.0300,
                                   color: Colors.black)),
                         ),

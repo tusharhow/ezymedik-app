@@ -3,6 +3,7 @@ import 'package:ezymedik_app/components/reusble_button.dart';
 import 'package:ezymedik_app/screens/set_hospital.dart';
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../constants.dart';
 
@@ -45,13 +46,13 @@ class _ChooseHospitalState extends State<ChooseHospital> {
               Container(
                 // alignment: Alignment.center,
                 child: Text('My Preferred Hospital is',
-                    style: TextStyle(
+                    style: GoogleFonts.poppins(
                         fontSize: _size.height * 0.0340,
                         fontWeight: FontWeight.bold,
                         color: defaultColor)),
               ),
               Text('choose your hospital',
-                  style: TextStyle(
+                  style: GoogleFonts.poppins(
                       fontSize: _size.height * 0.0240, color: Colors.black54)),
             ],
           ),
@@ -71,12 +72,12 @@ class _ChooseHospitalState extends State<ChooseHospital> {
                       ? Text('Choose your hospital')
                       : Text(
                           _dropDownValue!,
-                          style: TextStyle(color: Colors.blue),
+                          style: GoogleFonts.poppins(color: Colors.blue),
                         ),
                   isExpanded: true,
                   iconSize: 30.0,
                   icon: Icon(Icons.keyboard_arrow_down),
-                  style: TextStyle(color: Colors.blue),
+                  style: GoogleFonts.poppins(color: Colors.blue),
                   items: ['Dhaka Medical', 'Two', 'Three'].map(
                     (val) {
                       return DropdownMenuItem<String>(

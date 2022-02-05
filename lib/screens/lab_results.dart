@@ -1,5 +1,6 @@
 import 'package:ezymedik_app/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LabResults extends StatelessWidget {
   const LabResults({Key? key}) : super(key: key);
@@ -32,7 +33,7 @@ class LabResults extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: Text(
                 'Lab Results',
-                style: TextStyle(
+                style: GoogleFonts.poppins(
                   color: defaultColor,
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
@@ -59,7 +60,7 @@ class LabResults extends StatelessWidget {
                           alignment: Alignment.centerLeft,
                           child: Text(
                             '20,January 2022',
-                            style: TextStyle(
+                            style: GoogleFonts.poppins(
                               color: Colors.black54,
                               fontSize: 17,
                             ),
@@ -70,7 +71,7 @@ class LabResults extends StatelessWidget {
                       Container(
                         alignment: Alignment.centerLeft,
                         child: Text('Your Covid results came\nback negative.',
-                            style: TextStyle(
+                            style: GoogleFonts.poppins(
                                 fontSize: _size.height * 0.0230,
                                 color: Colors.black)),
                       ),
@@ -101,7 +102,7 @@ class LabResults extends StatelessWidget {
                           alignment: Alignment.centerLeft,
                           child: Text(
                             '20,January 2022',
-                            style: TextStyle(
+                            style: GoogleFonts.poppins(
                               color: Colors.black54,
                               fontSize: 17,
                             ),
@@ -112,7 +113,7 @@ class LabResults extends StatelessWidget {
                       Container(
                         alignment: Alignment.centerLeft,
                         child: Text('Malaria Test was positive',
-                            style: TextStyle(
+                            style: GoogleFonts.poppins(
                                 fontSize: _size.height * 0.0230,
                                 color: Colors.black)),
                       ),

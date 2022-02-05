@@ -3,6 +3,7 @@ import 'package:ezymedik_app/components/reusable_form_registration.dart';
 import 'package:ezymedik_app/constants.dart';
 import 'package:ezymedik_app/screens/user.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({Key? key}) : super(key: key);
@@ -32,7 +33,7 @@ class SignUpScreen extends StatelessWidget {
                 Container(
                   alignment: Alignment.centerLeft,
                   child: Text('Enter your details below',
-                      style: TextStyle(
+                      style: GoogleFonts.poppins(
                           fontSize: _size.height * 0.04,
                           fontWeight: FontWeight.bold,
                           color: defaultColor)),
@@ -102,7 +103,7 @@ class SignUpScreen extends StatelessWidget {
                     child: Center(
                       child: Text(
                         'Sign Up',
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                             color: Colors.white,
                             fontSize: 20,
                             fontWeight: FontWeight.bold),

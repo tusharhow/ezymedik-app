@@ -1,6 +1,7 @@
 import 'package:ezymedik_app/components/navigate.dart';
 import 'package:ezymedik_app/components/reusble_button.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../constants.dart';
 import 'appoinment_confirmation.dart';
@@ -41,7 +42,7 @@ class _BookApoinmentState extends State<BookApoinment> {
             Container(
               alignment: Alignment.center,
               child: Text('Book an appointment',
-                  style: TextStyle(
+                  style: GoogleFonts.poppins(
                       fontSize: _size.height * 0.0340,
                       fontWeight: FontWeight.bold,
                       color: defaultColor)),
@@ -54,7 +55,7 @@ class _BookApoinmentState extends State<BookApoinment> {
               child: TextFormField(
                 decoration: InputDecoration(
                   labelText: 'Describe your symptoms',
-                  labelStyle: TextStyle(
+                  labelStyle: GoogleFonts.poppins(
                     color: Colors.black,
                     fontSize: _size.height * 0.02,
                   ),
@@ -75,7 +76,7 @@ class _BookApoinmentState extends State<BookApoinment> {
               child: Container(
                 alignment: Alignment.centerLeft,
                 child: Text('Select date and time',
-                    style: TextStyle(
+                    style: GoogleFonts.poppins(
                         fontSize: _size.height * 0.0340,
                         fontWeight: FontWeight.bold,
                         color: Colors.black)),
@@ -89,7 +90,7 @@ class _BookApoinmentState extends State<BookApoinment> {
               child: Container(
                 alignment: Alignment.centerLeft,
                 child: Text('October 2021',
-                    style: TextStyle(
+                    style: GoogleFonts.poppins(
                         fontSize: _size.height * 0.0340,
                         fontWeight: FontWeight.bold,
                         color: Colors.black26)),
@@ -108,7 +109,7 @@ class _BookApoinmentState extends State<BookApoinment> {
               child: Container(
                 alignment: Alignment.centerLeft,
                 child: Text('Choose your hospital',
-                    style: TextStyle(
+                    style: GoogleFonts.poppins(
                       fontSize: _size.height * 0.0340,
                       fontWeight: FontWeight.bold,
                     )),
@@ -130,12 +131,12 @@ class _BookApoinmentState extends State<BookApoinment> {
                         ? Text('Choose your hospital')
                         : Text(
                             _dropDownValue!,
-                            style: TextStyle(color: Colors.blue),
+                            style: GoogleFonts.poppins(color: Colors.blue),
                           ),
                     isExpanded: true,
                     iconSize: 30.0,
                     icon: Icon(Icons.keyboard_arrow_down),
-                    style: TextStyle(color: Colors.blue),
+                    style: GoogleFonts.poppins(color: Colors.blue),
                     items: ['Dhaka Medical', 'Two', 'Three'].map(
                       (val) {
                         return DropdownMenuItem<String>(
@@ -225,7 +226,7 @@ class _CategoryState extends State<Category> {
               ),
               Text(
                 dataList[index],
-                style: TextStyle(
+                style: GoogleFonts.poppins(
                     color:
                         selectedIndex == index ? Colors.white : Colors.black54,
                     fontSize: 17,
@@ -236,7 +237,7 @@ class _CategoryState extends State<Category> {
               ),
               Text(
                 dataList1[index],
-                style: TextStyle(
+                style: GoogleFonts.poppins(
                     color:
                         selectedIndex == index ? Colors.white : Colors.black54,
                     fontSize: 14),
@@ -304,7 +305,7 @@ class _CategoryTwoState extends State<CategoryTwo> {
           child: Center(
             child: Text(
               dataList[index],
-              style: TextStyle(
+              style: GoogleFonts.poppins(
                   color: selectedIndex == index ? Colors.white : Colors.black54,
                   fontSize: 15,
                   fontWeight: FontWeight.bold),

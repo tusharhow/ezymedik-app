@@ -4,6 +4,7 @@ import 'package:ezymedik_app/screens/auth/login_screen.dart';
 import 'package:ezymedik_app/screens/auth/signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -38,7 +39,7 @@ class MainScreen extends StatelessWidget {
               //   child: Center(
               //     child: Text(
               //       'Login',
-              //       style: TextStyle(color: Colors.white, fontSize: 17),
+              //       style: GoogleFonts.poppins(color: Colors.white, fontSize: 17),
               //     ),
               //   ),
               // ),
@@ -66,7 +67,7 @@ class MainScreen extends StatelessWidget {
               //     child: Center(
               //       child: Text(
               //         'Register',
-              //         style: TextStyle(color: Colors.white, fontSize: 17),
+              //         style: GoogleFonts.poppins(color: Colors.white, fontSize: 17),
               //       ),
               //     ),
               //   ),
@@ -91,7 +92,7 @@ class MainScreen extends StatelessWidget {
                   ),
                   Text(
                     'Login with fingerprint or Face ID',
-                    style: TextStyle(color: Colors.white, fontSize: 17),
+                    style: GoogleFonts.poppins(color: Colors.white, fontSize: 17),
                   ),
                 ],
               )

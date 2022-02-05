@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../constants.dart';
 
@@ -32,12 +33,18 @@ class AmbulanceConfirmation extends StatelessWidget {
                 height: _size.height * 0.6,
                 width: _size.width / 1.2,
                 decoration: BoxDecoration(
-                  color: Colors.white,
-                  border: Border.all(
-                    color: Colors.blue,
-                    width: 1,
-                  ),
-                ),
+                    color: Colors.white,
+                    border: Border.all(
+                      color: Colors.blue,
+                      width: 1,
+                    ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: Offset(0, 2),
+                        blurRadius: 10,
+                      ),
+                    ]),
                 child: Padding(
                   padding: const EdgeInsets.only(top: 20),
                   child: Column(
@@ -49,7 +56,7 @@ class AmbulanceConfirmation extends StatelessWidget {
                       Container(
                         alignment: Alignment.center,
                         child: Text('Confirmation',
-                            style: TextStyle(
+                            style: GoogleFonts.poppins(
                                 fontSize: _size.height * 0.0340,
                                 fontWeight: FontWeight.bold,
                                 color: defaultColor)),
@@ -61,7 +68,7 @@ class AmbulanceConfirmation extends StatelessWidget {
                         alignment: Alignment.center,
                         child: Text(
                           'An ambulance will be\ndispatched to your\nlocation at',
-                          style: TextStyle(
+                          style: GoogleFonts.poppins(
                             fontSize: _size.height * 0.0230,
                           ),
                           textAlign: TextAlign.center,
@@ -74,7 +81,7 @@ class AmbulanceConfirmation extends StatelessWidget {
                         alignment: Alignment.center,
                         child: Text(
                           'Olive Hospital, Ikoyi, Lagos',
-                          style: TextStyle(
+                          style: GoogleFonts.poppins(
                             fontSize: _size.height * 0.0230,
                             color: Colors.black54,
                           ),

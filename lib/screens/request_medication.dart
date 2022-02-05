@@ -2,6 +2,7 @@ import 'package:ezymedik_app/components/navigate.dart';
 import 'package:ezymedik_app/components/reusble_button.dart';
 import 'package:ezymedik_app/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'appoinment_confirmation.dart';
 import 'medication_confirmation.dart';
@@ -36,7 +37,7 @@ class RequestMedication extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text('Request Medication',
-                    style: TextStyle(
+                    style: GoogleFonts.poppins(
                         fontSize: _size.height * 0.0340,
                         fontWeight: FontWeight.bold,
                         color: defaultColor)),
@@ -52,7 +53,7 @@ class RequestMedication extends StatelessWidget {
             Container(
               alignment: Alignment.center,
               child: Text('list the drugs you would like',
-                  style: TextStyle(
+                  style: GoogleFonts.poppins(
                       fontSize: _size.height * 0.0270, color: Colors.black45)),
             ),
             SizedBox(
@@ -63,7 +64,7 @@ class RequestMedication extends StatelessWidget {
               child: TextFormField(
                 decoration: InputDecoration(
                   hintText: 'Drug Name',
-                  hintStyle: TextStyle(
+                  hintStyle: GoogleFonts.poppins(
                     fontSize: _size.height * 0.0220,
                     color: Colors.black45,
                   ),
@@ -84,7 +85,7 @@ class RequestMedication extends StatelessWidget {
               child: TextFormField(
                 decoration: InputDecoration(
                   hintText: 'Drug Name',
-                  hintStyle: TextStyle(
+                  hintStyle: GoogleFonts.poppins(
                     fontSize: _size.height * 0.0220,
                     color: Colors.black45,
                   ),
@@ -105,7 +106,7 @@ class RequestMedication extends StatelessWidget {
               child: TextFormField(
                 decoration: InputDecoration(
                   hintText: 'Drug Name',
-                  hintStyle: TextStyle(
+                  hintStyle: GoogleFonts.poppins(
                     fontSize: _size.height * 0.0220,
                     color: Colors.black45,
                   ),
@@ -126,7 +127,7 @@ class RequestMedication extends StatelessWidget {
               child: TextFormField(
                 decoration: InputDecoration(
                   hintText: 'Drug Name',
-                  hintStyle: TextStyle(
+                  hintStyle: GoogleFonts.poppins(
                     fontSize: _size.height * 0.0220,
                     color: Colors.black45,
                   ),

@@ -1,6 +1,7 @@
 import 'package:ezymedik_app/components/navigate.dart';
 import 'package:ezymedik_app/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'nhis_number.dart';
 
@@ -24,7 +25,7 @@ class UserScreen extends StatelessWidget {
               Container(
                 alignment: Alignment.centerLeft,
                 child: Text('Are you an NHIS enrollee?',
-                    style: TextStyle(
+                    style: GoogleFonts.poppins(
                         fontSize: _size.height * 0.0340,
                         fontWeight: FontWeight.bold,
                         color: defaultColor)),
@@ -59,7 +60,7 @@ class UserScreen extends StatelessWidget {
                           Container(
                             alignment: Alignment.centerLeft,
                             child: Text('Yes, I am',
-                                style: TextStyle(
+                                style: GoogleFonts.poppins(
                                     fontSize: _size.height * 0.0230,
                                     color: Colors.black)),
                           ),
@@ -98,7 +99,7 @@ class UserScreen extends StatelessWidget {
                         Container(
                           alignment: Alignment.centerLeft,
                           child: Text('No, I am not',
-                              style: TextStyle(
+                              style: GoogleFonts.poppins(
                                   fontSize: _size.height * 0.0230,
                                   color: Colors.black)),
                         ),

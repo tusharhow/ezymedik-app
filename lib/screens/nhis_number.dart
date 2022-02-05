@@ -3,6 +3,7 @@ import 'package:ezymedik_app/components/reusble_button.dart';
 import 'package:ezymedik_app/constants.dart';
 import 'package:ezymedik_app/screens/auth/signup_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'choose_hospital.dart';
 
@@ -34,7 +35,7 @@ class NHISnumber extends StatelessWidget {
               SizedBox(height: _size.height * 0.05),
               Center(
                 child: Text('Enter your NHIS Number',
-                    style: TextStyle(
+                    style: GoogleFonts.poppins(
                         fontSize: _size.height * 0.0340,
                         fontWeight: FontWeight.bold,
                         color: defaultColor)),
@@ -46,7 +47,7 @@ class NHISnumber extends StatelessWidget {
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                     hintText: 'NHIS Number',
-                    hintStyle: TextStyle(
+                    hintStyle: GoogleFonts.poppins(
                       fontSize: _size.height * 0.02,
                       color: Colors.grey,
                     ),

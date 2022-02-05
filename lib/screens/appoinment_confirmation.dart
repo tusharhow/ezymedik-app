@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../constants.dart';
 
@@ -49,7 +50,7 @@ class AppoinmentConfirmation extends StatelessWidget {
                       Container(
                         alignment: Alignment.center,
                         child: Text('Confirmation',
-                            style: TextStyle(
+                            style: GoogleFonts.poppins(
                                 fontSize: _size.height * 0.0340,
                                 fontWeight: FontWeight.bold,
                                 color: defaultColor)),
@@ -61,7 +62,7 @@ class AppoinmentConfirmation extends StatelessWidget {
                         alignment: Alignment.center,
                         child: Text(
                           'Your appointment\nhas been booked',
-                          style: TextStyle(
+                          style: GoogleFonts.poppins(
                             fontSize: _size.height * 0.0230,
                           ),
                           textAlign: TextAlign.center,
@@ -80,7 +81,7 @@ class AppoinmentConfirmation extends StatelessWidget {
                               children: [
                                 Text(
                                   'Booking ID:',
-                                  style: TextStyle(
+                                  style: GoogleFonts.poppins(
                                     fontSize: _size.height * 0.0260,
                                     fontWeight: FontWeight.bold,
                                   ),
@@ -90,7 +91,7 @@ class AppoinmentConfirmation extends StatelessWidget {
                                 ),
                                 Text(
                                   '#425413',
-                                  style: TextStyle(
+                                  style: GoogleFonts.poppins(
                                     fontSize: _size.height * 0.0260,
                                     color: Colors.black45,
                                   ),
@@ -108,7 +109,7 @@ class AppoinmentConfirmation extends StatelessWidget {
                               children: [
                                 Text(
                                   'January 23:',
-                                  style: TextStyle(
+                                  style: GoogleFonts.poppins(
                                     fontSize: _size.height * 0.0260,
                                     fontWeight: FontWeight.bold,
                                   ),
@@ -118,7 +119,7 @@ class AppoinmentConfirmation extends StatelessWidget {
                                 ),
                                 Text(
                                   '2:30 PM',
-                                  style: TextStyle(
+                                  style: GoogleFonts.poppins(
                                     fontSize: _size.height * 0.0260,
                                     color: Colors.black45,
                                   ),
@@ -143,7 +144,7 @@ class AppoinmentConfirmation extends StatelessWidget {
                         alignment: Alignment.center,
                         child: Text(
                           'Olive Hospital, Ikoyi, Lagos',
-                          style: TextStyle(
+                          style: GoogleFonts.poppins(
                             fontSize: _size.height * 0.0230,
                             color: Colors.black54,
                           ),
