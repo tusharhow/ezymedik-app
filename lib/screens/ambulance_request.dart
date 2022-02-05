@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../constants.dart';
-import 'ambulance_confirmation.dart';
+import '../confirmation_widgets/ambulance_confirmation.dart';
 
 class AmbulanceRequest extends StatelessWidget {
   const AmbulanceRequest({Key? key}) : super(key: key);

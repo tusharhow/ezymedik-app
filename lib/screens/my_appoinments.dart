@@ -1,6 +1,6 @@
 import 'package:ezymedik_app/components/navigate.dart';
 import 'package:ezymedik_app/components/reusble_button.dart';
-import 'package:ezymedik_app/screens/appoinment_confirmation.dart';
+import 'package:ezymedik_app/confirmation_widgets/appoinment_confirmation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

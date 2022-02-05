@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../constants.dart';
-import 'appoinment_confirmation.dart';
+import '../confirmation_widgets/appoinment_confirmation.dart';
 
 class BookApoinment extends StatefulWidget {
   const BookApoinment({Key? key}) : super(key: key);

@@ -1,4 +1,4 @@
-import 'package:ezymedik_app/screens/ambulance_confirmation.dart';
+import 'package:ezymedik_app/confirmation_widgets/ambulance_confirmation.dart';
 import 'package:ezymedik_app/screens/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
