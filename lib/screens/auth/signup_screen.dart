@@ -1,5 +1,7 @@
+import 'package:ezymedik_app/components/navigate.dart';
 import 'package:ezymedik_app/components/reusable_form_registration.dart';
 import 'package:ezymedik_app/constants.dart';
+import 'package:ezymedik_app/screens/user.dart';
 import 'package:flutter/material.dart';
 
 class SignUpScreen extends StatelessWidget {
@@ -78,28 +80,33 @@ class SignUpScreen extends StatelessWidget {
                     obscureText: false,
                     label: 'Phone Number'),
                 SizedBox(height: defaultPadding * 3),
-                Container(
-                  width: _size.width,
-                  height: 55,
-                  decoration: BoxDecoration(
-                    color: defaultColor,
-                    gradient: LinearGradient(
-                      colors: [
-                        Color(0xff18A0FB),
-                        Color(0xff312DDE).withOpacity(0.80),
-                      ],
-                      begin: Alignment.centerLeft,
-                      end: Alignment.centerRight,
+                InkWell(
+                  onTap: () {
+                    push(context: context, widget: UserScreen());
+                  },
+                  child: Container(
+                    width: _size.width,
+                    height: 55,
+                    decoration: BoxDecoration(
+                      color: defaultColor,
+                      gradient: LinearGradient(
+                        colors: [
+                          Color(0xff18A0FB),
+                          Color(0xff312DDE).withOpacity(0.80),
+                        ],
+                        begin: Alignment.centerLeft,
+                        end: Alignment.centerRight,
+                      ),
+                      borderRadius: BorderRadius.circular(20),
                     ),
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: Center(
-                    child: Text(
-                      'Sign Up',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold),
+                    child: Center(
+                      child: Text(
+                        'Sign Up',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold),
+                      ),
                     ),
                   ),
                 ),
