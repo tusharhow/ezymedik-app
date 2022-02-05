@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ReusableTextFormField extends StatelessWidget {
-  const ReusableTextFormField({
+class ReusableTextFormFieldRegistration extends StatelessWidget {
+  const ReusableTextFormFieldRegistration({
     Key? key,
     required Size size,
     required this.hint,
@@ -24,18 +24,18 @@ class ReusableTextFormField extends StatelessWidget {
         decoration: InputDecoration(
           labelText: label,
           labelStyle: TextStyle(
-            color: Colors.white,
+            color: Colors.black,
             fontSize: 15,
           ),
           hintText: hint,
-          hintStyle: TextStyle(color: Colors.white54),
+          hintStyle: TextStyle(color: Colors.black54),
           enabledBorder: UnderlineInputBorder(
             borderSide: BorderSide(
-              color: Colors.white,
+              color: Colors.black,
             ),
           ),
         ),
-        style: TextStyle(color: Colors.white),
+        style: TextStyle(color: Colors.black54),
       ),
     );
   }
