@@ -23,11 +23,11 @@ class CardScreen extends StatelessWidget {
                 // make buttons use the appropriate styles for cards
                 child: ButtonBar(
                   children: <Widget>[
-                    FlatButton(
+                    ElevatedButton(
                       child: const Text('BUY TICKETS'),
                       onPressed: () {/* ... */},
                     ),
-                    FlatButton(
+                    ElevatedButton(
                       child: const Text('LISTEN'),
                       onPressed: () {/* ... */},
                     ),

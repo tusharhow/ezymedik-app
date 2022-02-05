@@ -1,9 +1,6 @@
-import 'package:ezymedik_app/components/navigate.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import '../constants.dart';
-import 'nhis_number.dart';
 
 class SetHospital extends StatelessWidget {
   const SetHospital({Key? key}) : super(key: key);

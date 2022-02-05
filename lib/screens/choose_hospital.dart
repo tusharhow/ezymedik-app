@@ -2,7 +2,6 @@ import 'package:ezymedik_app/components/navigate.dart';
 import 'package:ezymedik_app/components/reusble_button.dart';
 import 'package:ezymedik_app/screens/set_hospital.dart';
 import 'package:flutter/material.dart';
-import 'package:getwidget/getwidget.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../constants.dart';

@@ -3,8 +3,6 @@ import 'package:ezymedik_app/components/reusble_button.dart';
 import 'package:ezymedik_app/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import '../confirmation_widgets/appoinment_confirmation.dart';
 import '../confirmation_widgets/medication_confirmation.dart';
 
 class RequestMedication extends StatelessWidget {

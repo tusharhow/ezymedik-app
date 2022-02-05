@@ -1,10 +1,8 @@
 import 'package:ezymedik_app/components/navigate.dart';
 import 'package:ezymedik_app/components/reusble_button.dart';
 import 'package:ezymedik_app/constants.dart';
-import 'package:ezymedik_app/screens/auth/signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'choose_hospital.dart';
 
 class NHISnumber extends StatelessWidget {

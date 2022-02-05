@@ -2,8 +2,6 @@ import 'package:ezymedik_app/components/navigate.dart';
 import 'package:ezymedik_app/components/reusable_form.dart';
 import 'package:ezymedik_app/components/reusble_button.dart';
 import 'package:ezymedik_app/constants.dart';
-import 'package:ezymedik_app/screens/auth/signup_screen.dart';
-import 'package:ezymedik_app/screens/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 

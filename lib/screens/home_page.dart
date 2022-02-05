@@ -1,12 +1,10 @@
 import 'package:ezymedik_app/components/navigate.dart';
 import 'package:ezymedik_app/constants.dart';
 import 'package:ezymedik_app/screens/book_appoinment.dart';
-import 'package:ezymedik_app/screens/profile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'ambulance_request.dart';
-import 'card_screen.dart';
 import 'lab_results.dart';
 import 'my_appoinments.dart';
 import 'request_medication.dart';
