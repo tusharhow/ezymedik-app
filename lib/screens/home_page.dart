@@ -1,6 +1,7 @@
 import 'package:ezymedik_app/components/navigate.dart';
 import 'package:ezymedik_app/constants.dart';
 import 'package:ezymedik_app/screens/book_appoinment.dart';
+import 'package:ezymedik_app/screens/view_history.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -41,7 +42,7 @@ class HomePage extends StatelessWidget {
               style: GoogleFonts.poppins(
                   color: defaultColor,
                   fontWeight: FontWeight.bold,
-                  fontSize: 17),
+                  fontSize: 15),
             ),
             onTap: () {
               push(context: context, widget: MyAppoinment());
@@ -57,7 +58,7 @@ class HomePage extends StatelessWidget {
               style: GoogleFonts.poppins(
                   color: defaultColor,
                   fontWeight: FontWeight.bold,
-                  fontSize: 17),
+                  fontSize: 15),
             ),
             onTap: () {
               push(context: context, widget: BookApoinment());
@@ -73,7 +74,7 @@ class HomePage extends StatelessWidget {
               style: GoogleFonts.poppins(
                   color: defaultColor,
                   fontWeight: FontWeight.bold,
-                  fontSize: 17),
+                  fontSize: 15),
             ),
             onTap: () {},
           ),
@@ -87,7 +88,7 @@ class HomePage extends StatelessWidget {
               style: GoogleFonts.poppins(
                   color: defaultColor,
                   fontWeight: FontWeight.bold,
-                  fontSize: 17),
+                  fontSize: 15),
             ),
             onTap: () {},
           ),
@@ -101,9 +102,25 @@ class HomePage extends StatelessWidget {
               style: GoogleFonts.poppins(
                   color: defaultColor,
                   fontWeight: FontWeight.bold,
-                  fontSize: 17),
+                  fontSize: 15),
             ),
             onTap: () {},
+          ),
+          SizedBox(
+            height: _size.height * 0.01,
+          ),
+          ListTile(
+            leading: Image.asset('images/his.png'),
+            title: Text(
+              'View History',
+              style: GoogleFonts.poppins(
+                  color: defaultColor,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15),
+            ),
+            onTap: () {
+              push(context: context, widget: ViewHistory());
+            },
           ),
           SizedBox(
             height: _size.height * 0.01,
@@ -115,7 +132,7 @@ class HomePage extends StatelessWidget {
               style: GoogleFonts.poppins(
                   color: defaultColor,
                   fontWeight: FontWeight.bold,
-                  fontSize: 17),
+                  fontSize: 15),
             ),
             onTap: () {},
           ),
