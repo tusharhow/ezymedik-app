@@ -1,6 +1,7 @@
 import 'package:ezymedik_app/components/navigate.dart';
 import 'package:ezymedik_app/constants.dart';
 import 'package:ezymedik_app/screens/book_appoinment.dart';
+import 'package:ezymedik_app/screens/find_hospital.dart';
 import 'package:ezymedik_app/screens/profile.dart';
 import 'package:ezymedik_app/screens/view_history.dart';
 import 'package:flutter/material.dart';
@@ -107,7 +108,9 @@ class HomePage extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   fontSize: 15),
             ),
-            onTap: () {},
+            onTap: () {
+              push(context: context, widget: FindHospital());
+            },
           ),
           SizedBox(
             height: _size.height * 0.01,
