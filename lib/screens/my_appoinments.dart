@@ -1,6 +1,8 @@
+import 'package:ezymedik_app/components/navigate.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../constants.dart';
+import 'my_appoinment_second.dart';
 
 class MyAppoinment extends StatelessWidget {
   const MyAppoinment({Key? key}) : super(key: key);
@@ -28,22 +30,27 @@ class MyAppoinment extends StatelessWidget {
             SizedBox(
               height: _size.height * 0.02,
             ),
-            Container(
-              alignment: Alignment.center,
-              child: Text('My Appointments',
-                  style: GoogleFonts.poppins(
-                      fontSize: _size.height * 0.0340,
-                      fontWeight: FontWeight.bold,
-                      color: defaultColor)),
+            Padding(
+              padding: const EdgeInsets.only(left: 20.0),
+              child: Container(
+                alignment: Alignment.centerLeft,
+                child: Text('My Appointments',
+                    style: GoogleFonts.poppins(
+                        fontSize: _size.height * 0.0340,
+                        fontWeight: FontWeight.bold,
+                        color: defaultColor)),
+              ),
             ),
             SizedBox(
               height: _size.height * 0.05,
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                push(context: context, widget: MyAppoinmentSecond());
+              },
               child: Container(
                 height: 120,
-                width: _size.width / 1.20,
+                width: _size.width / 1.10,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: Colors.black12,
@@ -54,7 +61,7 @@ class MyAppoinment extends StatelessWidget {
                     children: [
                       Image.asset('images/chk.png'),
                       SizedBox(
-                        width: _size.width * 0.06,
+                        width: _size.width * 0.08,
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 20),

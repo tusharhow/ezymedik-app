@@ -1,4 +1,6 @@
+import 'package:ezymedik_app/components/navigate.dart';
 import 'package:ezymedik_app/constants.dart';
+import 'package:ezymedik_app/screens/hospital_search_result_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -73,35 +75,40 @@ class _FindHospitalState extends State<FindHospital> {
             SizedBox(
               height: _size.height / 30,
             ),
-            Container(
-              height: 110,
-              width: _size.width / 1.15,
-              decoration: BoxDecoration(
-                color: Color(0xff939393).withOpacity(0.10),
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(
-                  color: Colors.blue,
+            InkWell(
+              onTap: () {
+                push(context: context, widget: HospitalSearchPage());
+              },
+              child: Container(
+                height: 110,
+                width: _size.width / 1.15,
+                decoration: BoxDecoration(
+                  color: Color(0xff939393).withOpacity(0.10),
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(
+                    color: Colors.blue,
+                  ),
                 ),
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    'Saint James Hospital',
-                    style: GoogleFonts.poppins(
-                      fontSize: _size.height * 0.025,
-                      color: Colors.black,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Saint James Hospital',
+                      style: GoogleFonts.poppins(
+                        fontSize: _size.height * 0.025,
+                        color: Colors.black,
+                      ),
                     ),
-                  ),
-                  Text(
-                    '12 Lekki Road, Lekki Gardens',
-                    style: GoogleFonts.poppins(
-                      fontSize: _size.height * 0.018,
-                      color: Colors.black54,
+                    Text(
+                      '12 Lekki Road, Lekki Gardens',
+                      style: GoogleFonts.poppins(
+                        fontSize: _size.height * 0.018,
+                        color: Colors.black54,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
             SizedBox(
